@@ -13,6 +13,6 @@ int main(void)
 	{
 		putchar(reva);
 	}
-	putchar('\n')
+	putchar('\n');
 		return (0);
 }
