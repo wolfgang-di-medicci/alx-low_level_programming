@@ -1,1 +1,1 @@
-a read me for this progect
+a read me for this project
