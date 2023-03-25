@@ -42,6 +42,6 @@ void times_table(void)
 		a = 0;
 		c++;
 	}
-
+}
 
 
