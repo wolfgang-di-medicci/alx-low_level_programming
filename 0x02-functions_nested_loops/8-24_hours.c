@@ -13,14 +13,14 @@ void jack_bauer(void)
 	{
 		while (minut <= minutmax)
 		{
-			_putchar(hr < 9 ? 0 + '0' : s / 10 + '0');
-			_putchar(hr < 9 ? hr + '0' : s % 10 + '0');
+			_putchar(hr < 9 ? 0 + '0' : hr / 10 + '0');
+			_putchar(hr < 9 ? hr + '0' : hr % 10 + '0');
 			_putchar(':');
 			_putchar(minut < 9 ? 0 + '0' : minut / 10 + '0');
 			_putchar(minut < 9 ? minut + '0' : minut % 10 + '0');
 			_putchar('\n');
-			minute++;
+			minut++;
 		}
-		minute = 0;
+		minut = 0;
 		hr++;
 	}
