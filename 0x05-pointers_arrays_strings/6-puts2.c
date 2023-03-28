@@ -12,7 +12,7 @@ void puts2(char *str)
 
 	while (*str)
 	{
-		count++;
+		c++;
 		str++;
 	}
 	for (i = 0; i < c; i++)
