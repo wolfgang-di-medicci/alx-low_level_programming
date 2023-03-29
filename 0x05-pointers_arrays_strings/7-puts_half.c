@@ -9,7 +9,7 @@
 void puts_half(char *str)
 {
 	int c = 0, i;
-	
+
 	while (*str)
 	{
 		c++;
@@ -19,7 +19,7 @@ void puts_half(char *str)
 	{
 		str--;
 	}
-	i = (c % 2 ==0) ? c / 2 : (c + 1) / 2;
+	i = (c % 2 == 0) ? c / 2 : (c + 1) / 2;
 
 	for (; i < c; i++)
 	{
