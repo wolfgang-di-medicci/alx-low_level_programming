@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * print_array - prints elements upto n - 1
@@ -21,5 +20,5 @@ void print_array(int *a, int n)
 		}
 		num++;
 	}
-	_putchar('\n');
+	putchar('\n');
 }
