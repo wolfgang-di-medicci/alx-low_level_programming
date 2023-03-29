@@ -6,6 +6,7 @@
  * @src: string been copied
  * Return: the copied string
 */
+
 char *_strcpy(char *dest, char *src)
 {
 	int count = 0, i;
@@ -13,10 +14,9 @@ char *_strcpy(char *dest, char *src)
 	while ( *src)
 	{
 		src++;
-		count;
+		count++;
 	}
 	for (i = 0; i < count; i++)
-
 		src--;
 	for (i = 0; i < count; i++)
 	{
