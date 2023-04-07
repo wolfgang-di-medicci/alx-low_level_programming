@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - finds the perfect square of a number
  * _sqrt_recursive_helper - aids in the process
  * @n: input variable
  * @i: aids in the process and starts from 1
@@ -22,6 +21,12 @@ int _sqrt_recursive_helper(int n, int i)
 			return (_sqrt_recursive_helper(n, i + 1));
 	}
 }
+
+/**
+ * _sqrt_recursion - finds the perfect square of a number
+ * @n: input variable
+ * Return: the perfect square root, otherwise -1
+ */
 
 int _sqrt_recursion(int n)
 {
