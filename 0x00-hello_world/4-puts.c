@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - main entry point
+ * new change
  * Return: always 0 (success)
  */
 int main(void)
