@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <main.h>
+#include "main.h"
 
 /**
  * _strdup - makes a duplicate of str to new memory allocation
@@ -19,7 +19,7 @@ char *_strdup(char *str)
 	}
 	while (str[i] != '\0')
 	{
-		i++
+		i++;
 	}
 	strnew = malloc(sizeof(char) * (i + 1));
 	if (strnew == NULL)
