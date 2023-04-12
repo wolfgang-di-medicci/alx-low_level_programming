@@ -6,6 +6,7 @@
  * @s: string to be converted
  * Return: the int converted from the string
  */
+
 int _atoi(char *s)
 {
 	int i, d, n, len, f, digit;
@@ -49,9 +50,9 @@ int _atoi(char *s)
  * main - multiplies two numbers
  * @argc: argument count
  * @argv: argument vector
- *
  * Return: 0 (Success), 1 (Error)
  */
+
 int main(int argc, char *argv[])
 {
 	int result, num1, num2;
