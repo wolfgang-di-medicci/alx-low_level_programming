@@ -2,12 +2,12 @@
 #include "dog.h"
 
 /**
- * strlen - finds the length of a string
+ * _strlen - finds the length of a string
  * @s: string input
  * Return: length of the string
  */
 
-int strlen(char *s)
+int _strlen(char *s)
 {
 	int i = 0;
 
@@ -19,13 +19,13 @@ int strlen(char *s)
 }
 
 /**
- * strcpy - copies the string pointed to by src including \0
+ * _strcpy - copies the string pointed to by src including \0
  * @dest: pointer to the buffer in which we copy the string
  * @src: string to be copied
  * Return: the pointer to dest
  */
 
-char *strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int len = 0, i;
 
@@ -54,8 +54,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *dog;
 	int len1, len2;
 
-	len1 = strlen(name);
-	len2 = strlen(owner);
+	len1 = _strlen(name);
+	len2 = _strlen(owner);
 
 	dog = malloc(sizeof(dog_t));
 	if (dog == NULL)
@@ -73,8 +73,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog->name);
 		return (NULL);
 	}
-	strcpy(dog->name, name);
-	strcpy(dog->owner, owner);
+	_strcpy(dog->name, name);
+	_strcpy(dog->owner, owner);
 	dog->age = age;
 	return (dog);
 }
