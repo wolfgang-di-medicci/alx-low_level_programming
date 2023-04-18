@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i;
-	const char* filename = __FILE__;
+	const char *filename = __FILE__;
 	
 	for (i = 0; filename[i] != '\0'; i++)
 	{
