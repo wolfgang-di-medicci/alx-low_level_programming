@@ -1,5 +1,5 @@
 #include "3-calc.h"
-#include <stddef.h>
+#include <stdlib.h>
 
 /**
  * get_op_func - selects a function from many
@@ -8,7 +8,7 @@
  * corresponding to the operator given as parameter
 */
 
-int(*get_op_func(char *s))(int, int)
+int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
