@@ -7,7 +7,7 @@
  * @separator: string to be printed between strings. like a comma
  * @n: number of strings passed to the function.
  * @...: A variable number of argument to be printed. vaariadic function
- * Return: NULL when it is not printed. if one of the strings is NULL, print nil
+ * Return: if one of the strings is NULL, print nil
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -20,7 +20,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	for (index = 0; index < n; index++)
 	{
-    	str = va_arg(strings, char *);
+		str = va_arg(strings, char *);
 
 		if (str == NULL)
 			printf("(nil)");
