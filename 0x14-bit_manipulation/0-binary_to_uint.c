@@ -10,7 +10,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	int c = 0;
 	int len = 0;
-	int a = 1;
+	int a = 0;
 	int max = 1;
 	int i;
 	int sum = 0;
@@ -18,7 +18,7 @@ unsigned int binary_to_uint(const char *b)
 	if (!b)
 		return (0);
 
-	while (b[len] != '0')
+	while (b[len] != '\0')
 	{
 		len++;
 	}
@@ -37,8 +37,7 @@ unsigned int binary_to_uint(const char *b)
 
 	for (i = 0; i < len; i++)
 	{
-		sum += b[i] * max;
-		max /= 2;
+		sum += b[i] * (max / 2);
 	}
 	return (sum);
 }
