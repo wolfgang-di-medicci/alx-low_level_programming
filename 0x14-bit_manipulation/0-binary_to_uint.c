@@ -8,11 +8,15 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	if (!b)
-		return (0);
-
 	int c = 0;
 	int len = 0;
+	int a = 1;
+	int max = 1;
+	int i;
+	int sum = 0;
+
+	if (!b)
+		return (0);
 
 	while (b[len] != '0')
 	{
@@ -25,17 +29,11 @@ unsigned int binary_to_uint(const char *b)
 		c++;
 	}
 
-	int a = 1;
-	int max = 1;
-
 	while (a < len)
 	{
 		max *= 2;
 		a++;
 	}
-
-	int i;
-	int sum = 0;
 
 	for (i = 0; i < len; i++)
 	{
